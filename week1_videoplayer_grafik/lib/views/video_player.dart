@@ -83,11 +83,11 @@ class _PlaylistState extends State<Playlist> {
     }
   }
 
-  @override
-  void initState() {
-    _getFavorite();
-    super.initState();
-  }
+// @override
+// void initState() {
+//   _getFavorite();
+//   super.initState();
+// }
 
   @override
   Widget build(BuildContext context) {
@@ -132,13 +132,13 @@ class _PlaylistState extends State<Playlist> {
                             ),
                           ),
                           IconButton(
-                            // icon: Icon(
-                            //   _favoriteContent
-                            //       ? Icons.bookmark_outlined
-                            //       : Icons.bookmark_outline_rounded,
-                            // ),
+                            icon: Icon(
+                              _favoriteContent
+                                  ? Icons.bookmark_outlined
+                                  : Icons.bookmark_outline_rounded,
+                            ),
 
-                            icon: _favorite(widget.listYt[index]['id']),
+                            // icon: _favorite(widget.listYt[index]['id']),
                             // icon: _favorite(
                             //     'UExrNTd6SExLbG5UOEVZN0U1RF9qLTdIY2lUZGJuRjN0Ui4xMkVGQjNCMUM1N0RFNEUx'),
                             onPressed: () {
